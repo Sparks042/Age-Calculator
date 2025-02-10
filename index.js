@@ -5,6 +5,9 @@ let dayDash = document.querySelector(".day")
 let dayLabel = document.getElementById("dayLabel")
 let monthLabel = document.getElementById("monthLabel")
 let yearLabel = document.getElementById("yearLabel")
+let dayBoarder = document.getElementById("day");
+let monthBoarder = document.getElementById("month");
+let yearBoarder = document.getElementById("year");
 
 
 
@@ -17,38 +20,37 @@ let yearLabel = document.getElementById("yearLabel")
     
 
     // Check if any of the input fields are empty
-    let isDayEmpty = dayInput.value.trim() === "";
-    let isMonthEmpty = monthInput.value.trim() === "";
-    let isYearEmpty = yearInput.value.trim() === "";
+    let isDayEmpty = dayInput === "";
+    let isMonthEmpty = monthInput === "";
+    let isYearEmpty = yearInput === "";
 
     // If any field is empty, set border to red and label font color to red
     if (isDayEmpty) {
-        dayInput.style.border = "2px solid red";
+        dayBoarder.style.border = "1px solid red";
         dayLabel.style.color = "red";
     } else {
-        dayInput.style.border = "";
-        dayLabel.style.color = "";
+        dayBoarder.style.border = "hsl(0, 0%, 94%)";
+        dayLabel.style.color = "hsl(0, 3%, 45%)";
     }
 
     if (isMonthEmpty) {
-        monthInput.style.border = "2px solid red";
+        monthBoarder.style.border = "1px solid red";
         monthLabel.style.color = "red";
     } else {
-        monthInput.style.border = "";
-        monthLabel.style.color = "";
+        monthBoarder.style.border = "hsl(0, 0%, 94%)";
+        monthLabel.style.color = "hsl(0, 3%, 45%)";
     }
 
     if (isYearEmpty) {
-        yearInput.style.border = "2px solid red";
+        yearBoarder.style.border = "1px solid red";
         yearLabel.style.color = "red";
     } else {
-        yearInput.style.border = "";
-        yearLabel.style.color = "";
+        yearBoarder.style.border = "hsl(0, 0%, 94%)";
+        yearLabel.style.color = "hsl(0, 3%, 45%)";
     }
 
     // check if inputs are empty
     if (yearInput.trim() === "" || monthInput.trim() === "" || dayInput.trim() === "") {
-        alert("Please enter your date of birth.");
         return; 
     }
     let userYear = new Date(yearInput)

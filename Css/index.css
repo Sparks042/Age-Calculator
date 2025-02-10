@@ -25,6 +25,7 @@ input{
     text-indent: 12px;
     height: 8.3vh;
     width: 91%;
+    /* border: 2px solid; */
     border: 2px solid   hsl(0, 0%, 94%);
     border-radius: 6px;
     margin-top: 5px;
