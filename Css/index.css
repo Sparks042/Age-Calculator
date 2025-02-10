@@ -89,7 +89,7 @@ hr{
         margin-left: 10px;
     }
     input{
-        width: 105%;
+        width: 108%;
     }
     ::placeholder{
         font-size: 18px;
@@ -98,7 +98,7 @@ hr{
         font-size: 12px;
     }
     .age{
-        font-size: 55px;
+        font-size: 50px;
         top: 45%;
         left: 15%;
         line-height: 60px;
